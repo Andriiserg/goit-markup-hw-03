@@ -1,7 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: WHITE;
+    margin: 0;
 }
 
 /* remove underline */
@@ -16,6 +23,23 @@ ul, ol {
 
 /* HEADER */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+}
+
 .main-logo {
     flex-shrink: 0;
     color: #4D5AE5;
@@ -25,6 +49,8 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+    margin-left: 156px;
 }
 
 a:hover {
@@ -39,14 +65,13 @@ a:focus {
     color: #2E2F42;
 }
 
-/* navigation - make it in a list ?? SPAN - ??? */
-
 .navigation-list {
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 40px;
 }
 
 /* contacts */
@@ -59,6 +84,7 @@ a:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 40px;
 }
 
 .contact:hover {
@@ -73,6 +99,9 @@ a:focus {
 .main-section {
     background-color: #2E2F42;
     flex-shrink: 0;
+    width: 1440px;
+    height: 600px;
+    text-align: center;
 }
 
 .main-title {
@@ -82,6 +111,9 @@ a:focus {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-right: 472px;
 }
 
 .button {
@@ -93,6 +125,12 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.64px;
     cursor: pointer;
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .button:hover {
@@ -105,24 +143,52 @@ a:focus {
 
 /* FEATURES */
 
+.hide {
+    display: none;
+}
+
 .features {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 0;
 }
 
 .features-paragraph {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    margin-top: 8px;
+}
+
+.features-li {
+    text-align: left;
+}
+
+.features-ul {
+    display: flex;
+    margin-left: 156px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    gap: 8px;
 }
 
 /* OUR TEAM */
 
+.our-team-ul {
+    display: flex;
+    padding-bottom: 120px;
+    padding-left: 156px;
+    gap: 24px;
+}
+
 .our-team-section {
     background: #F4F4FD;
+    width: 1440px;
+    height: 732px;
+    flex-shrink: 0;
 }
 
 .our-team {
@@ -133,11 +199,16 @@ a:focus {
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .our-team-li {
     justify-content: center;
     background: var(--WHITE, #FFF);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
     
 .our-team-mates {
@@ -158,6 +229,24 @@ a:focus {
 
 /* PORTFOLIO */
 
+.our-portfolio-section {
+    width: 1440px;
+}
+
+.our-portfolio-ul {
+    display: flex;
+    margin-top: 72px;
+    margin-bottom: 120px;
+    padding-left: 156px;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.our-portfolio-li {
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+}
+
 .our-portfolio {
     color:#2E2F42;
     text-align: center;
@@ -166,6 +255,12 @@ a:focus {
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    margin-top: 120px;
+    /* padding-bottom: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0; */
 }
 
 .our-portfolio-list {
@@ -174,18 +269,23 @@ a:focus {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    padding-left: 16px;
 }
 
 .our-portfolio-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-left: 16px;
 }
 
 /* FOOTER */
 
 .footer {
     background-color: #2E2F42;
+    width: 1440px;
+    height: 312px;
+    flex-shrink: 0;
 }
 
 .footer-logo {
@@ -196,6 +296,7 @@ a:focus {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-left: 156px;
 }
 
 .footer-logo-s {
@@ -207,4 +308,10 @@ a:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    margin-left: 156px;
+}
+
+.footer-div {
+    padding-top: 101.5px;
+    padding-bottom: 100px;
 }
