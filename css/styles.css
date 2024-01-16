@@ -21,6 +21,10 @@ ul, ol {
 	list-style-type: none;
 }
 
+img {
+    display: block;
+}
+
 /* HEADER */
 
 header {
@@ -297,6 +301,8 @@ a:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-left: 156px;
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-logo-s {
@@ -311,7 +317,7 @@ a:focus {
     margin-left: 156px;
 }
 
-.footer-div {
-    padding-top: 101.5px;
+.container {
+    padding-top: 100px;
     padding-bottom: 100px;
 }
