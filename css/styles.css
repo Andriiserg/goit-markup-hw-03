@@ -38,6 +38,10 @@ img {
 
 .container-header {
     display: flex;
+    width: 1158px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nav-header {
@@ -47,8 +51,16 @@ img {
 
 .head {
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
 }
+
+.li-header {
+    margin-right: 40px;
+}
+
+/* .li-header-last {
+    margin-right: 0
+} */
 
 .main-logo {
     flex-shrink: 0;
@@ -83,14 +95,6 @@ a:focus {
     letter-spacing: 0.02em;
     padding-top: 24px; 
     padding-bottom: 24px;
-}
-
-.li-header {
-    margin-right: 40px;
-}
-
-.li-header-last {
-    margin-right: 0
 }
 
 /* contacts */
