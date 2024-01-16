@@ -27,21 +27,27 @@ img {
 
 /* HEADER */
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: white;
+    border-bottom: 1px solid #e7e9fc;
 }
 
-nav {
+.container-header {
+    display: flex;
+}
+
+.nav-header {
     display: flex;
     align-items: center;
 }
 
 .head {
     display: flex;
+    gap: 40px;
 }
 
 .main-logo {
@@ -75,7 +81,16 @@ a:focus {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px; 
+    padding-bottom: 24px;
+}
+
+.li-header {
     margin-right: 40px;
+}
+
+.li-header-last {
+    margin-right: 0
 }
 
 /* contacts */
@@ -290,6 +305,8 @@ a:focus {
     width: 1440px;
     height: 312px;
     flex-shrink: 0;
+    padding-top: 100px; 
+    padding-bottom: 100px
 }
 
 .footer-logo {
@@ -318,6 +335,6 @@ a:focus {
 }
 
 .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
 }
