@@ -1,9 +1,3 @@
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-} */
-
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -50,15 +44,6 @@ img {
     align-items: center;
 }
 
-.head {
-    display: flex;
-    /* gap: 40px; */
-}
-
-.li-header {
-    margin-right: 40px;
-}
-
 .main-logo {
     flex-shrink: 0;
     color: #4D5AE5;
@@ -94,7 +79,18 @@ a:focus {
     padding-bottom: 24px;
 }
 
+.head-navigator {
+    display: flex;
+    gap: 40px;
+}
+
 /* contacts */
+
+.head-adr {
+    display: flex;
+    gap: 40px;
+}
+
 .address {
     font-style: normal;
 }
@@ -104,7 +100,6 @@ a:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-right: 40px;
 }
 
 .contact:hover {
@@ -115,7 +110,7 @@ a:focus {
     color: #404bbf;
 }
 
-/* first section */
+/*! first section */
 
 .main-section {
     background-color: #2E2F42;
@@ -170,7 +165,7 @@ a:focus {
     background-color: #404BBF;
 }
 
-/* second section - FEATURES */
+/*! second section - FEATURES */
 
 .visually-hidden {
     position: absolute;
@@ -215,7 +210,7 @@ a:focus {
     gap: 24px;
 }
 
-/* third section - OUR TEAM */
+/*! third section - OUR TEAM */
 
 .our-team-ul {
     display: flex;
@@ -274,7 +269,7 @@ a:focus {
     letter-spacing: 0.32px;
 }
 
-/* fourth section - PORTFOLIO */
+/*! fourth section - PORTFOLIO */
 
 .our-portfolio-section {
     width: 1440px;
@@ -329,12 +324,11 @@ a:focus {
     padding-left: 16px;
 }
 
-/* FOOTER */
+/*! FOOTER */
 
 .footer {
     background-color: #2E2F42;
     width: 1440px;
-    height: 312px;
     flex-shrink: 0;
     padding-top: 100px; 
     padding-bottom: 100px
@@ -363,6 +357,5 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.32px;
     margin-left: 156px;
+    max-width: 264px;
 }
-
-/* .container {} */
