@@ -34,12 +34,14 @@ img {
     padding: 20px;
     background-color: white;
     border-bottom: 1px solid #e7e9fc;
+    margin: 0;
+    padding: 0 15px;
+    /* width: 1158px; */
 }
 
 .container-header {
     display: flex;
     width: 1158px;
-    margin: 0;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -57,10 +59,6 @@ img {
 .li-header {
     margin-right: 40px;
 }
-
-/* .li-header-last {
-    margin-right: 0
-} */
 
 .main-logo {
     flex-shrink: 0;
@@ -118,13 +116,16 @@ a:focus {
     color: #404bbf;
 }
 
-/* main title with button */
+/* first section */
+
 .main-section {
     background-color: #2E2F42;
     flex-shrink: 0;
     width: 1440px;
     height: 600px;
     text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .main-title {
@@ -134,21 +135,25 @@ a:focus {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
-    padding-top: 188px;
     padding-left: 472px;
     padding-right: 472px;
+    /* max-width: 496px; */
 }
 
 .button {
-    background: var(--IRIS, #4D5AE5);
+    background-color:#4D5AE5;
     font-family: "Roboto", sans-serif;
     color: #FFF;
+    border-radius: 4px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
     cursor: pointer;
     text-align: center;
+    /* display: block; */
+    height: 56px;
+    border: none;
     margin-top: 48px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -164,19 +169,24 @@ a:focus {
     background-color: #404BBF;
 }
 
-/* FEATURES */
+/* second section - FEATURES */
 
-.hide {
+.visually-hidden {
     display: none;
 }
 
-.features {
+.main-features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.features-title {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    margin-bottom: 0;
+    margin-bottom: 8px;
 }
 
 .features-paragraph {
@@ -188,17 +198,16 @@ a:focus {
 
 .features-li {
     text-align: left;
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .features-ul {
     display: flex;
     margin-left: 156px;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    gap: 8px;
+    gap: 24px;
 }
 
-/* OUR TEAM */
+/* third section - OUR TEAM */
 
 .our-team-ul {
     display: flex;
@@ -212,6 +221,8 @@ a:focus {
     width: 1440px;
     height: 732px;
     flex-shrink: 0;
+    padding-top: 120px; 
+    padding-bottom: 120px;
 }
 
 .our-team {
@@ -222,18 +233,21 @@ a:focus {
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .our-team-li {
     justify-content: center;
     background: var(--WHITE, #FFF);
     border-radius: 0px 0px 4px 4px;
-    background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-    
+
+.container-team-desc {
+    padding: 32px 0;
+    flex-basis: calc((100% - 72px) / 4);
+}
+
 .our-team-mates {
     color: #2E2F42;
     text-align: center;
@@ -241,6 +255,7 @@ a:focus {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
 .our-team-position {
@@ -250,24 +265,32 @@ a:focus {
     letter-spacing: 0.32px;
 }
 
-/* PORTFOLIO */
+/* fourth section - PORTFOLIO */
 
 .our-portfolio-section {
     width: 1440px;
+    padding: 120px 0 120px 0;
 }
 
 .our-portfolio-ul {
     display: flex;
     margin-top: 72px;
-    margin-bottom: 120px;
     padding-left: 156px;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .our-portfolio-li {
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
+    border: 1px solid #E7E9FC;
+}
+
+.container-portfolio {
+    width: calc((100% - 48px) / 3);
+    padding: 32px 16px;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .our-portfolio {
@@ -278,12 +301,7 @@ a:focus {
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    margin-top: 120px;
-    /* padding-bottom: 32px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
-    flex-shrink: 0; */
+    margin-bottom: 72px;
 }
 
 .our-portfolio-list {
@@ -338,7 +356,4 @@ a:focus {
     margin-left: 156px;
 }
 
-.container {
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
-}
+/* .container {} */
