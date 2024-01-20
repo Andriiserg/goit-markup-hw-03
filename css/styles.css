@@ -28,18 +28,18 @@ img {
 
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
     border-bottom: 1px solid #e7e9fc;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding: 24px 0;
 }
 
 .header .container {
     display: flex;
     width: 1158px;
-    padding: 24px 0;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
 }
 
 .nav-header {
@@ -57,7 +57,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
-    margin-left: 156px;
 }
 
 a:hover {
@@ -94,7 +93,7 @@ a:focus {
 
 .address {
     font-style: normal;
-    padding-left: 150px;
+    /* padding-left: 150px; */
 }
 
 .contact {
