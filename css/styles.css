@@ -31,6 +31,8 @@ img {
     align-items: center;
     background-color: white;
     border-bottom: 1px solid #e7e9fc;
+    padding: 0 15px;
+    padding: 24px 0;
 }
 
 .header .container {
@@ -38,8 +40,6 @@ img {
     width: 1158px;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 0 15px;
-    padding: 24px 0;
 }
 
 .nav-header {
@@ -93,7 +93,6 @@ a:focus {
 
 .address {
     font-style: normal;
-    /* padding-left: 150px; */
 }
 
 .contact {
